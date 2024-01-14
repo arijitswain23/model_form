@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>insert_topic</title>
+</head>
+<body>
+    <center>
+        <h1>Insert Topic From Model Forms</h1>
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ETFO.as_p}}
+
+            <input type="submit" value="Insert Topics">
+        </form>
+    </center>
+</body>
+</html>
